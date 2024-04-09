@@ -1,2 +1,12 @@
 /forum/node_modules/
 /forum/dist/
+/forumWeb/frontend/src/main.server.ts
+/forumWeb/frontend/src/main.ts
+/forumWeb/frontend/src/styles.css
+/forumWeb/frontend/src/app/app.component.css
+/forumWeb/frontend/src/app/app.component.spec.ts
+/forumWeb/frontend/src/app/app.component.html
+/forumWeb/frontend/src/app/app.component.ts
+/forumWeb/frontend/src/app/app.config.server.ts
+/forumWeb/frontend/src/app/app.config.ts
+/forum/src/backend/constants.ts
