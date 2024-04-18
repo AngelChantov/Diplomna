@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  background-image: url('../../assets/images/IMG_20240408_213813_912.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 100vh;
+  background-image: url('../../assets/images/SN857545.JPG');
 }
+section{
+  margin-top: 70px;
+}
+
 
