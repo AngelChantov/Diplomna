@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { AuthService } from '../services/auth.service';
 import { JwtModule } from '@nestjs/jwt';
 import { StudentsModule } from './students.module';
-import {AuthController} from "../controllers/auth.controller";
+
 import {jwtConstants} from "../constants";
 
 @Module({
@@ -15,6 +15,6 @@ import {jwtConstants} from "../constants";
         }),
     ],
     providers: [AuthService],
-    exports: [AuthService,AuthController],
+    exports: [AuthService,],
 })
 export class AuthModule {}

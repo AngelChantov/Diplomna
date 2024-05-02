@@ -3,16 +3,17 @@ import {initFlowbite} from "flowbite";
 import {RouterOutlet} from "@angular/router";
 
 @Component({
-  selector: 'app-footer',
+  selector: 'app-english',
   standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+  templateUrl: './english.component.html',
+  styleUrl: './english.component.css'
 })
-export class FooterComponent implements AfterViewInit {
+export class EnglishComponent implements AfterViewInit {
   ngAfterViewInit() {
     if (typeof document !== 'undefined') {
       initFlowbite();
     }
   }
+
 }

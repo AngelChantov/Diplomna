@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+.course-container-left{
+  display: flex;
+  position: relative;
+  bottom: 42vh;
+  left: 24vw;
+  z-index:1002;
+
+}
+
+.course-container-right{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 30vh;
+  right: 24vw;
+  z-index: 1001;
+
+
+}
+
 .contact-info-container {
   display: flex;
   justify-content: flex-end;
@@ -35,6 +55,9 @@
 
 @media (max-width: 768px){
   .BALC{
+    display: none;
+  }
+  .contact-info-container{
     display: none;
   }
 }

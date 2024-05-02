@@ -8,7 +8,7 @@ import {StudentsService} from "../backend/services/students.service";
 import {StudentsRepository} from "../backend/repositories/students.repository";
 import {TeachersRepository} from "../backend/repositories/teachers.repository";
 import {CoursesRepository} from "../backend/repositories/courses.repository";
-import {AuthController} from "../backend/controllers/auth.controller";
+
 import { databaseConfig } from '../config';
 
 @Module({
