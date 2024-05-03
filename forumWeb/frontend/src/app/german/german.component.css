@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.top-left {
+  position:absolute ;
+  top: 100px;
+  left: 10px;
+  width: 300px;
+  height: auto;
+}
+.image{
+  height:12em;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.image1{
+  height:6em;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.image2{
+  height:6em;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.image-container {
+  display: flex;
+  justify-content: space-between;
+}
+.custom-h2 {
+  color: #FAD1E8;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transform: skewX(-16deg);
+}
+.german{
+  color: #FAD1E8;
+  font:bold 20px Georgia, serif;
+  font-size: 1.8em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.german-text{
+  color: #FAD1E8;
+  font: 10px Georgia, serif;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.german-text-highlight{
+  color: darkslategray;
+  font: 10px Georgia, serif;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  background-color:#DEE2FF;
+}
+.right-side {
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  width: 300px;
+  height: auto;
+}
+.centered-content h1 {
+  font-size: 3rem;
+  color: slategray;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
