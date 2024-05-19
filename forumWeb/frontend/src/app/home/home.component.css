@@ -1,6 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.course-containers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
 .course-container-left,
 .course-container-left1,
 .course-container-right,
@@ -9,45 +17,20 @@
   align-items: center;
   height: 11.3vh;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.course-container-left{
-  display: flex;
   position: relative;
-  bottom: 42vh;
-  left: 24vw;
-  z-index:1002;
+  bottom: auto;
+  left: auto;
+  top: -100px;
 
 }
 
-.course-container-left1{
-  display: flex;
-  position: relative;
-  bottom: 42vh;
-  left: 24vw;
-  z-index:1002;
 
-}
-.course-container-right1 {
-  display: flex;
-  position: relative;
-  bottom: 64.6vh;
-  left: 58vw;
-  z-index:1002;
-}
-
-.course-container-right {
-  display: flex;
-  position: relative;
-  bottom: 64.6vh;
-  left: 58vw;
-  z-index:1002;
-}
 .centered-content{
   margin-top: 20vh
 }
 .image3{
   width:15em;
+
 }
 
 .contact-info-container {

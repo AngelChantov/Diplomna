@@ -8,14 +8,18 @@ import {StudentsService} from "../backend/services/students.service";
 import {StudentsRepository} from "../backend/repositories/students.repository";
 import {TeachersRepository} from "../backend/repositories/teachers.repository";
 import {CoursesRepository} from "../backend/repositories/courses.repository";
-
 import { databaseConfig } from '../config';
+import {CoursesController} from "../backend/controllers/courses.controller";
+import {Courses} from "../backend/entities/courses.entity";
+
+
 
 @Module({
   imports: [TypeOrmModule.forRoot({ type: 'mongodb',
-    url: databaseConfig.mongoUri,
-    database: databaseConfig.dbName,}), TypeOrmModule.forFeature([CoursesRepository, TeachersRepository, StudentsRepository]),],
-  controllers: [AppController],
-  providers: [AppService],
+    url:databaseConfig.mongoUri,
+    database: databaseConfig.dbName,entities: [Courses],}), TypeOrmModule.forFeature([CoursesRepository, TeachersRepository, StudentsRepository]),],
+
+  controllers: [AppController,CoursesController],
+  providers: [AppService,CoursesService,CoursesRepository],
 })
 export class AppModule {}

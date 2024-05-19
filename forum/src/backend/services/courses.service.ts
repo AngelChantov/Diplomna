@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { CoursesRepository } from '../repositories/courses.repository';
 import { Courses } from '../entities/courses.entity'
+import {Observable} from "rxjs";
 
 @Injectable()
 export class CoursesService{

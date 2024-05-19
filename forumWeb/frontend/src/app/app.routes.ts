@@ -4,9 +4,10 @@ import {LoginComponent} from "./login/login.component";
 import {NgModule} from "@angular/core";
 import {HomeComponent} from "./home/home.component";
 import {EnglishComponent} from "./english/english.component";
-import {ApplyComponent} from "./apply/apply.component";
+import {SchoolComponent} from "./school/school.component";
 import {GermanComponent} from "./german/german.component";
 import {AdminComponent} from "./admin/admin.component";
+import {AboutUsComponent} from "./about-us/about-us.component";
 
 
 export const routes: Routes = [
@@ -29,7 +30,7 @@ export const routes: Routes = [
   },
   {
     path:"apply",
-    component: ApplyComponent
+    component: SchoolComponent
 
 
 
@@ -56,7 +57,17 @@ export const routes: Routes = [
   {
     path:"english",
     component: EnglishComponent
-  }
+  },
+
+  {
+    path:"school",
+    component: SchoolComponent
+  },
+
+    {
+      path:"about",
+      component: AboutUsComponent
+    }
 
 
 ];

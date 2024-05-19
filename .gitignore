@@ -10,3 +10,4 @@
 /forumWeb/frontend/src/app/app.config.server.ts
 /forumWeb/frontend/src/app/app.config.ts
 /forum/src/backend/constants.ts
+/forum/src/DB.env
