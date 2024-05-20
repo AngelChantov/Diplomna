@@ -15,8 +15,11 @@ export class CoursesService{
     }
 
     async findCourseById(id: number): Promise<Courses>{
-        return this.coursesRepository.findById(id);
-
+        const course = await this.coursesRepository.findById(id);
+        if (!course) {
+            throw new Error(`Course with id ${id} not found`);
+        }
+        return course;
     }
 
     async findAllCourses():Promise<Courses[]>{

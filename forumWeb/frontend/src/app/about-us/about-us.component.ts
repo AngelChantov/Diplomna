@@ -4,9 +4,10 @@ import {initFlowbite} from "flowbite";
 import {CoursesService} from "../courses.service";
 import {CommonModule} from "@angular/common";
 import { HttpClientModule, } from '@angular/common/http';
+import {FormsModule} from "@angular/forms";
 
 @Component({
-  imports: [RouterOutlet, CommonModule, HttpClientModule,],
+  imports: [RouterOutlet, CommonModule, HttpClientModule, FormsModule,],
   providers: [CoursesService,],
   selector: 'app-about-us',
   standalone: true,

@@ -1,1 +1,32 @@
-<p>admin works!</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+
+</head>
+<body style="background-image: url('../../assets/images/SN857536.JPG');">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+<div>
+  <h2>Add Course</h2>
+  <form (ngSubmit)="addCourse()">
+    <input [(ngModel)]="newCourse.courseName" name="courseName" placeholder="Course Name" required>
+    <input [(ngModel)]="newCourse.courseTeacher" name="courseTeacher" placeholder="Course Teacher" required>
+    <input [(ngModel)]="newCourse.courseCode" name="courseCode" placeholder="Course Code" required>
+    <button type="submit">Add Course</button>
+  </form>
+
+  <h2>Existing Courses</h2>
+  <ul>
+    <li *ngFor="let course of courses">
+      {{ course.courseName }} by {{ course.courseTeacher }} ({{ course.courseCode }})
+      <button (click)="deleteCourse(course.id)">Delete</button>
+    </li>
+  </ul>
+</div>
+</body>

@@ -67,7 +67,11 @@ export const routes: Routes = [
     {
       path:"about",
       component: AboutUsComponent
-    }
+    },
+  {
+    path:"admin",
+    component: AdminComponent
+  }
 
 
 ];
